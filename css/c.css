@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0 !important;
+}
+ul li{
+    list-style: none;
+}
+
+
+
+:root{
+    --body-color : white;
+    --second : rgba(119, 136, 153, 0.863);
+    --text :  black;  
+}
+.dark {
+    --body-color :rgba(2, 15, 34, 0.863);
+    --second : rgba(27, 39, 53, 0.863);
+    --text :  white;
+}
+
+.navChange{
+    background:var(--body-color) ;
+    box-shadow: 0 0 10px gray;
+}
+
+.body{
+    background: var(--body-color);
+}
+.arrow{
+    right: 40px;
+    bottom: 20px;
+    z-index: 9999;
+    display: none ;
+    background-color: var(--text);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px gray;
+    color:var(--body-color) ;
+}
+.arrow i{
+    margin-top: 12px;
+    color: var(--body-color);
+}
+
+.logo{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text);
+}
+.menu{
+    column-gap: 30px;
+}
+.menuu{
+    column-gap: 30px;
+
+}
+.menu  a{
+    color: var(--text);
+    font-size: 15px;
+}
+
+ .menu a:hover{
+    text-decoration: none;
+    color: var(--text);
+
+}
+
+.menuu  .mood i{
+    cursor: pointer;
+    color: var(--text);
+
+}
+.home , .colle{
+    background:var(--second);
+}
+.hh{
+    justify-content: end;
+}
+
+.home .home-cont h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--text);
+
+}
+.home .home-cont p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text);
+
+}
+.home .home-cont a{
+    color: var(--text);
+    font-weight: 600;
+}
+.home .home-cont a:hover{
+    text-decoration: none;
+
+}
+
+.home .images img:nth-child(1){
+    width: 65%;
+    height: 470px;
+    
+}
+.home .images img:nth-child(2){
+    width: 55%;
+    height: 390px;
+    position: absolute;
+    left:-5%;
+    top: 50%;
+}
+.title h2{
+    font-size: 45px;
+    color: var(--text);
+}
+
+.cate .card{
+    width: 80%;
+    color: var(--text);
+}
+.card img{
+    height: 100%;
+}
+.card-info{
+    background: var(--body-color);
+}
+
+
+.cate .card i{
+    cursor: pointer;
+}
+.cate .card i:hover{
+    transform: translateX(2px);
+}
+.bet{
+    column-gap: 40px;
+}
+
+.colle .colle-card img{
+    width: 100%;
+}
+.colle-infoo , .colle-info h3{
+    color: var(--text);
+}
+
+.colle-infoo i:hover{
+    transform: translateX(5px);
+    cursor: pointer;
+}
+.heading h2{
+    color: var(--text);
+}
+.price{
+    color: var(--text);
+
+}
+.item .img img{
+    width: 85% !important;
+}
+.owl-carousel {
+    position: relative;
+    color: var(--text);
+
+}
+.owl-next i,
+.owl-prev i {
+    position: absolute;
+    bottom: 0;
+}
+.owl-next i:hover,
+.owl-prev i:hover {
+    color: gray;
+}
+.owl-prev i {
+    left: 47%;
+}
+.owl-next i {
+    right: 47%;
+}
+
+.contt{
+    height: 280px;
+}
+
+.footer h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--text);
+
+}
+.footer p{
+    font-size: 13px;
+    color: gray;
+}
+.social{
+    column-gap: 20px;
+    color: var(--text);
+
+}
+
+.activem{
+    text-decoration: line-through;
+}
+
+.lll{
+    width: auto;
+}
+
+
+/**********************************************/
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
+.scroll-bottom{
+    opacity: 0;
+    transform:translateY(50px);
+    transition: all 3s;
+}
+.scroll-top{
+    opacity: 0;
+    transform:translateY(-50px);
+    transition: all 3s;
+}
+
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
+/*********************************************/
+
+.menu a li i{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    
+
+    nav .menuu .menu{
+        background-color:var(--body-color) ;
+        position: fixed;
+        width: 70%;
+        height: 70px;
+        left: 15%;
+        bottom: 70px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 0 0 10px gray;
+    }
+
+    .home{
+        padding-top: 100px;
+    }
+
+    nav .menuu .menu a li i{
+        display: block;
+    }
+    .hh{
+        justify-content: start;
+    }
+    .home .hhh{
+        display: flex;
+        justify-content: end;
+        margin-top: -100px;
+    }
+    .images{
+        width: 50%;
+        margin-top: -100px;
+    }
+    .home .images img:nth-child(1){
+        height: 300px;
+        
+    }
+    .home .images img:nth-child(2){
+        height: 230px;
+    }
+
+    .cate .card{
+        width: 70%;
+        height: 80%;
+        margin-bottom: 30px;
+    }
+    
+    .jj{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .kk{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .colle-card{
+        margin-bottom: 50px;
+    }
+    .colle .colle-card img{
+        width: 50%;
+        
+    }
+
+    .jjj{
+        width: 220px !important;
+    }
+    .contt{
+      height: 240px;
+      width: 100%; 
+    }
+    .contt img{
+      width: 100% !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+
+    
+   
+
+    .cate .card{
+        width: 70%;
+        height: 80%;
+        margin-bottom: 30px;
+      
+    }
+    
+    .jj{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .kk{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .colle-card{
+        margin-bottom: 50px;
+    }
+    .colle .colle-card img{
+        width: 50%;
+    }
+
+    .jjj{
+        width: 180px !important;
+    }
+    .contt{
+      height: 190px;
+      width: 100%;
+     }
+
+    .contt img{
+      width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+  .jjj{
+      width: 140px !important;
+  }
+  .contt{
+    height: 150px;
+    width: 100%;
+    
+  }
+ .contt img{
+    width: 100% !important;
+ }
+
+}
+
+@media screen and (max-width: 800px) {
+    .jjj{
+        width: 100px !important;
+    }
+    .contt{
+      height: 150px;
+      width: 100%;
+      
+    }
+   .contt img{
+      width: 100% !important;
+   }
+
+   nav .menuu .menu{
+       padding-left: 170px !important;
+       padding-right: 170px !important;
+
+ 
+}
+}
+
+
